@@ -25,7 +25,7 @@
       font-family: 'Viga', sans-serif;
       font-size: 50px;
     }
-    body {background-color: #d5d8e0;}
+    body {background: "assests/stones.jpg"}
   </style>
   </head>
   
@@ -34,33 +34,12 @@
     <div id="header" style="text-align:center">
       <h1>Go Unite</h1>
       <div id="soc-icons">
-        <a href="https://www.facebook.com/gounite.xyz/" target="_blank"><img alt="Facebook" src="icons/facebook_PO.png" width="25px" height="25px"></a>
-        <a href="https://www.instagram.com/go.unite/" target="_blank"><img alt="Instagram" src="icons/insta_PO.png" width="25px" height="25px"></a>
-        <a href="https://twitter.com/go_unite" target="_blank"><img alt="Twitter" src="icons/twitter_PO.png" width="25px" height="25px"></a>
-        <a href="https://www.patreon.com/gounite" target="_blank"><img alt="Patreon" src="icons/patreon_PO.png" width="25px" height="25px"></a>
+        <a href="https://www.facebook.com/gounite.xyz/" target="_blank"><img alt="Facebook" src="assets/facebook_PO.png" width="35px" height="35px"></a>
+        <a href="https://www.instagram.com/go.unite/" target="_blank"><img alt="Instagram" src="assets/insta_PO.png" width="35px" height="35px"></a>
+        <a href="https://twitter.com/go_unite" target="_blank"><img alt="Twitter" src="assets/twitter_PO.png" width="35px" height="35px"></a>
+        <a href="https://www.patreon.com/gounite" target="_blank"><img alt="Patreon" src="assets/patreon_PO.png" width="35px" height="35px"></a>
       </div>
     </div>
-    <!--THING TO MAKE THE IFRAME FIT THE PDF-->
-    <!--
-    <script type="text/javascript">
-      function getDocHeight(doc) {
-        // stackoverflow.com/questions/1145850/
-        var body = doc.body, html = doc.documentElement;
-        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-        return height;
-      }
-      function setIframeHeight(id) {
-        var ifrm = document.getElementById(id);
-        var doc = ifrm.contentDocument? ifrm.contentDocument:
-          ifrm.contentWindow.document;
-        ifrm.style.visibility = 'hidden';
-        ifrm.style.height = "10px"; // reset to minimal height ...
-        // IE opt. for bing/msn needs a bit added or scrollbar appears
-        ifrm.style.height = getDocHeight( doc ) + 4 + "px";
-        ifrm.style.visibility = 'visible';
-      }
-    </script>
-    -->
-    <iframe id="iframe" onload="setIframeHeight(this.id)" src="Go Unite Whitepaper.pdf#view=FitH" width="100%" height="1000px"></iframe>
+    <iframe id="iframe" src="Go Unite Whitepaper.pdf#view=FitH" width="100%" height="1000px"></iframe>
   </body>
 </html>
