@@ -25,8 +25,8 @@
     h1 {font-family: 'Viga', sans-serif;}
     body {background-color: #cdd0d6;}
     img {
-      height: "50px";
-      width: "50px";
+      height: "30px";
+      width: "30px";
     }
   </style>
   </head>
@@ -44,14 +44,25 @@
     </div>
     <!--THING TO MAKE THE IFRAME FIT THE PDF-->
     <script type="text/javascript">
-      function iframeLoaded() {
-      var iFrameID = document.getElementById('iframe');
-      if(iFrameID) {
-            // here you can make the height
-            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
-          }   
+      function getDocHeight(doc) {
+        doc = doc || document;
+        // stackoverflow.com/questions/1145850/
+        var body = doc.body, html = doc.documentElement;
+        var height = Math.max( body.scrollHeight, body.offsetHeight, 
+        html.clientHeight, html.scrollHeight, html.offsetHeight );
+        return height;
+      }
+      function setIframeHeight(id) {
+        var ifrm = document.getElementById(id);
+        var doc = ifrm.contentDocument? ifrm.contentDocument: 
+        ifrm.contentWindow.document;
+        ifrm.style.visibility = 'hidden';
+        ifrm.style.height = "10px"; // reset to minimal height ...
+        // IE opt. for bing/msn needs a bit added or scrollbar appears
+        ifrm.style.height = getDocHeight( doc ) + 4 + "px";
+        ifrm.style.visibility = 'visible';
       }
     </script>
-    <iframe id="iframe" onload="this.style.height=(this.contentDocument.body.scrollHeight+45) +'px';" scrolling="no" src="Go Unite Whitepaper.pdf" width="100%"></iframe>
+    <iframe id="ifrm" onload="setIframeHeight(this.id)" scrolling="no" src="Go Unite Whitepaper.pdf" width="100%"></iframe>
   </body>
 </html>
