@@ -47,12 +47,11 @@
       function iframeLoaded() {
       var iFrameID = document.getElementById('iframe');
       if(iFrameID) {
-            // here you can make the height, I delete it first, then I make it again
-            iFrameID.height = "";
+            // here you can make the height
             iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
           }   
       }
     </script>
-    <iframe id="iframe" onload="iframeLoaded()" src="Go Unite Whitepaper.pdf" width="100%" height="100%"></iframe>
+    <iframe id="iframe" onload="iframeLoaded()" src="Go Unite Whitepaper.pdf" width="100%"></iframe>
   </body>
 </html>
