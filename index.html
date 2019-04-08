@@ -30,6 +30,8 @@
   <meta name="description" content="a group working on a volunteering and event management platform. We're bringing nonprofits into the 21st century (and beyond), and bringing blockchain tools to the nonprofit world.">
   <meta name="keywords" content="nonprofit, volunteer, blockchain, tech, innovation">
   <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <!--<link rel="stylesheet" href="stylesheet.css" type="text/css">-->
   <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
   <!--SOME STYLING-->
@@ -40,14 +42,23 @@
       color: #ed1566;
     }
     body {
-      background-image: url(assets/dave-lowe-1404678-unsplash.jpg)
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-color: (0,0,0,0.5);
+      width: 100%;
+      height: auto;
+      display: block;
+      position: relative;
+    }
+    body::after {
+      content: "";
+      background: url(assets/dave-lowe-1404678-unsplash.jpg);
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
     }
   </style>
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   </head>
   
   <body>
