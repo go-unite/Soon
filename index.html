@@ -22,11 +22,14 @@
   <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
   <!--SOME STYLING-->
   <style>
-    h1 {font-family: 'Viga', sans-serif;}
+    h1 {
+      font-family: 'Viga', sans-serif;
+      size: "50px";
+    }
     body {background-color: #cdd0d6;}
     img {
-      height: "30px";
-      width: "30px";
+      height: "25px";
+      width: "25px";
     }
   </style>
   </head>
@@ -48,13 +51,12 @@
         doc = doc || document;
         // stackoverflow.com/questions/1145850/
         var body = doc.body, html = doc.documentElement;
-        var height = Math.max( body.scrollHeight, body.offsetHeight, 
-        html.clientHeight, html.scrollHeight, html.offsetHeight );
+        var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
         return height;
       }
       function setIframeHeight(id) {
         var ifrm = document.getElementById(id);
-        var doc = ifrm.contentDocument? ifrm.contentDocument: 
+        var doc = ifrm.contentDocument? ifrm.contentDocument; 
         ifrm.contentWindow.document;
         ifrm.style.visibility = 'hidden';
         ifrm.style.height = "10px"; // reset to minimal height ...
