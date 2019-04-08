@@ -17,10 +17,10 @@
   * using 'navigator.sendBeacon' in browser that support it.
   */
   var captureOutboundLink = function(url) {
-     ga('send', 'event', 'outbound', 'click', url, {
-       'transport': 'beacon',
-       'hitCallback': function(){document.location = url;}
-     });
+    ga('send', 'event', 'outbound', 'click', url, {
+      'transport': 'beacon',
+      'hitCallback': function(){document.location = url;}
+    });
   }
   </script>
   <meta charset="UTF-8">
@@ -48,17 +48,17 @@
   </style>
   </head>
   
-  <body background="assets/dave-lowe-1404678-unsplash.jpg">
+  <body>
     <!--THE HEADER-->
     <div id="header" style="text-align:center">
       <!--<h1>Go Unite</h1>-->
       <img src="assets/working logo.jpg" alt="working logo" width="150px" height="150px"></img>
       <hr align=center size=2px width=45% color=#ede7d9>
       <div id="soc-icons">
-        <a href="https://www.facebook.com/gounite.xyz/" onclick="captureOutboundLink('https://www.facebook.com/gounite.xyz/') target="_blank"><img alt="Facebook" src="assets/facebook_OP.png" width="50px" height="50px"></a>
-        <a href="https://www.instagram.com/go.unite/" onclick="captureOutboundLink('https://www.instagram.com/go.unite/') target="_blank"><img alt="Instagram" src="assets/insta_OP.png" width="50px" height="50px"></a>
-        <a href="https://twitter.com/go_unite" onclick="captureOutboundLink('https://twitter.com/go_unite') target="_blank"><img alt="Twitter" src="assets/twitter_OP.png" width="50px" height="50px"></a>
-        <a href="https://www.patreon.com/gounite" onclick="captureOutboundLink('https://www.patreon.com/gounite') target="_blank"><img alt="Patreon" src="assets/patreon_OP.png" width="50px" height="50px"></a>
+        <a href="https://www.facebook.com/gounite.xyz/" onclick="captureOutboundLink('facebook') target="_blank"><img alt="Facebook" src="assets/facebook_OP.png" width="50px" height="50px"></a>
+        <a href="https://www.instagram.com/go.unite/" onclick="captureOutboundLink('instagram') target="_blank"><img alt="Instagram" src="assets/insta_OP.png" width="50px" height="50px"></a>
+        <a href="https://twitter.com/go_unite" onclick="captureOutboundLink('twitter') target="_blank"><img alt="Twitter" src="assets/twitter_OP.png" width="50px" height="50px"></a>
+        <a href="https://www.patreon.com/gounite" onclick="captureOutboundLink('patreon') target="_blank"><img alt="Patreon" src="assets/patreon_OP.png" width="50px" height="50px"></a>
       </div>
     </div>
     <iframe id="iframe" src="Go Unite Whitepaper.pdf#view=FitH" width="100%" height="1000px"></iframe>
