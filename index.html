@@ -26,7 +26,7 @@
       font-family: 'Viga', sans-serif;
       font-size: "50px";
     }
-    body {background-color: #cdd0d6;}
+    body {background-color: #d5d8e0;}
     img {
       height: "20px";
       width: "20px";
@@ -46,12 +46,12 @@
       </div>
     </div>
     <!--THING TO MAKE THE IFRAME FIT THE PDF-->
+    <!--
     <script type="text/javascript">
       function getDocHeight(doc) {
-        doc = doc || document;
         // stackoverflow.com/questions/1145850/
         var body = doc.body, html = doc.documentElement;
-        var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+        var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
         return height;
       }
       function setIframeHeight(id) {
@@ -65,6 +65,7 @@
         ifrm.style.visibility = 'visible';
       }
     </script>
-    <iframe id="ifrm" onload="setIframeHeight(this.id)" src="Go Unite Whitepaper.pdf" width="100%"></iframe>
+    -->
+    <iframe id="iframe" onload="setIframeHeight(this.id)" src="Go Unite Whitepaper.pdf" width="100%" height="100%"></iframe>
   </body>
 </html>
