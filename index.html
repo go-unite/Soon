@@ -33,44 +33,45 @@
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
-  <style>
-    h1 {
-      font-family: 'Viga', sans-serif;
-      font-size: 70px;
-      color: #ed1566;
-    }
-    body {
-      width: 100%;
-      height: auto;
-      display: block;
-      position: relative;
-    }
-    body::after {
-      content: "";
-      background: url(assets/dave-lowe-1404678-unsplash.jpg);
-      opacity: 0.75;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;
-    }
-  </style>
+  
   </head>
-  <body>
-    <!--THE HEADER-->
-    <div id="header" style="text-align:center">
-      <!--<h1>Go Unite</h1>-->
-      <img src="assets/working logo.jpg" alt="working logo" width="150px" height="150px"></img>
-      <hr align=center size=2px width=45% color=#ede7d9>
-      <div id="soc-icons">
-        <a href="https://www.facebook.com/gounite.xyz/" target="_blank" onclick="captureOutboundLink('facebook')><img alt="Facebook" src="assets/facebook_OP.png" width="50px" height="50px"></a>
-        <a href="https://www.instagram.com/go.unite/" target="_blank" onclick="captureOutboundLink('instagram')><img alt="Instagram" src="assets/insta_OP.png" width="50px" height="50px"></a>
-        <a href="https://twitter.com/go_unite" target="_blank" onclick="captureOutboundLink('twitter')><img alt="Twitter" src="assets/twitter_OP.png" width="50px" height="50px"></a>
-        <a href="https://www.patreon.com/gounite" target="_blank" onclick="captureOutboundLink('patreon')><img alt="Patreon" src="assets/patreon_OP.png" width="50px" height="50px"></a>
-      </div>
-    </div>
-    <p align="center"><iframe id="iframe" src="Go Unite Whitepaper.pdf#zoom=90%" width="90%" height="800px"></iframe></p>
+    <div class="container">
+	<div id="splitlayout" class="splitlayout">
+		<div class="intro">
+			<div class="side side-left">
+				<div class="intro-content">
+					<div class="profile"><img src="img/profile1.jpg" alt="profile1"></div>
+					<h1><span>Toby Blue </span><span>Web Designer</span></h1>
+				</div>
+				<div class="overlay"></div>
+			</div>
+			<div class="side side-right">
+				<div class="intro-content">
+					<div class="profile"><img src="img/profile2.jpg" alt="profile2"></div>
+					<h1><span>Amy White </span><span>Web Developer</span></h1>
+				</div>
+				<div class="overlay"></div>
+			</div>
+		</div><!-- /intro -->
+		<div class="page page-right page-large">
+			<div class="page-inner">
+				<section>
+					<!-- content -->
+				</section>
+				<section>
+					<!-- content -->
+				</section>
+				<!-- ... -->
+			</div><!-- /page-inner -->
+		</div><!-- /page-right -->
+		<div class="page page-left page-fill">
+			<div class="page-inner">
+				<!-- ... -->
+			</div><!-- /page-inner -->
+		</div><!-- /page-left -->
+		<a href="#" class="back back-right" title="back to intro">→</a>
+		<a href="#" class="back back-left" title="back to intro">←</a>
+	</div><!-- /splitlayout -->
+</div><!-- /container -->
   </body>
 </html>
